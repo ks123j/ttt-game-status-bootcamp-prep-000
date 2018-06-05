@@ -33,6 +33,11 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board) && !draw?(board)
-    "X"
+  if won?(board)
+  won_board = won?(board)
+  #won?(board) returns an array of 3 - ex: [0,1,2]
+  won_board[0] #won_board[0] returns 0, because it is the 1st element
+  #board is an array of 9 elements
+  board[won_board[0]]
+  end
 end
