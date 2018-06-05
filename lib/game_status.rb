@@ -35,9 +35,7 @@ end
 def winner(board)
   if won?(board)
   won_board = won?(board)
-  #won?(board) returns an array of 3 - ex: [0,1,2]
-  won_board[0] #won_board[0] returns 0, because it is the 1st element
-  #board is an array of 9 elements
+  won_board[0] 
   board[won_board[0]]
   end
 end
